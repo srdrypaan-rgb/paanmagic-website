@@ -89,3 +89,5 @@ counters.forEach(counter=>{
     counterObserver.observe(counter);
 
 });
+
+document.getElementById("year").textContent = new Date().getFullYear();
