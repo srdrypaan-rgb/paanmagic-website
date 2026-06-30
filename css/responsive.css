@@ -69,7 +69,6 @@
     gap:40px;
 }
     
-
 nav.active{
     display:block;
     position:absolute;
@@ -85,6 +84,15 @@ nav.active{
     box-shadow:0 15px 40px rgba(0,0,0,.12);
 
     z-index:9999;
+}
+
+nav.active a{
+    color:#0B5A4A !important;
+}
+
+nav.active a.active{
+    color:#0B5A4A !important;
+    font-weight:700;
 }
 
 .nav-container{
@@ -415,6 +423,30 @@ img{
     padding:14px 34px;
 }
 
+/* ===========================
+   STORY SECTION MOBILE
+=========================== */
+
+.story-image{
+    width:280px;
+    height:280px;
+    margin:0 auto;
+}
+
+.story-left{
+    width:100%;
+}
+
+.story-left h2{
+    font-size:40px;
+    line-height:1.2;
+}
+
+.story-left p{
+    font-size:17px;
+    line-height:1.8;
+}
+
 
 /* ===========================
    PRODUCT GRID MOBILE
@@ -434,5 +466,18 @@ img{
 .product-card img{
     width:110px;
 }
+
+}
+
+@media (max-width:768px){
+
+    .navbar.scrolled nav.active a,
+    .navbar.scrolled nav.active a.active,
+    nav.active a,
+    nav.active a.active{
+
+        color:#0F5A46 !important;
+
+    }
 
 }
