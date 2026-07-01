@@ -467,28 +467,50 @@ img{
 =========================== */
 
 .product-grid{
+    display:grid;
     grid-template-columns:repeat(2,1fr);
-    gap:25px;
+    gap:16px;
+    align-items:start;
 }
 
 .product-card{
-    max-width:320px;
-    margin:0 auto;
-    padding:20px 16px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+
+    min-height:340px;
+    padding:18px 14px;
+
+    border-radius:24px;
 }
 
 .product-card p{
-    font-size:14px;
-    line-height:1.5;
+    font-size:15px;
+    line-height:1.45;
+    text-align:center;
+
+    display:-webkit-box;
+    -webkit-line-clamp:3;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
 }
 
 .product-card img{
-    width:110px;
+    width:150px;
+    margin-bottom:12px;
 }
 
 .product-card .btn{
-    padding:8px 16px;
-    font-size:10px;
+    margin-top:auto;
+    padding:10px 22px;
+    font-size:14px;
+}
+
+.product-card h3{
+    font-size:24px;
+    line-height:1.2;
+    margin:8px 0;
 }
 
 }
