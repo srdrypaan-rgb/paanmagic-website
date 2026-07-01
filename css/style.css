@@ -444,7 +444,7 @@ nav a.active::after{
 
 .product-card:hover img{
     transform:translateY(-18px) scale(1.12) rotate(-1deg);
-}
+}   
 
 .product-card h3{
     text-align:center;
@@ -457,6 +457,14 @@ nav a.active::after{
     line-height:1.8;
     max-width:90%;
     margin:0 auto;
+}
+
+.desktop-text{
+    display:block;
+}
+
+.mobile-text{
+    display:none;
 }
 
 .buy-btn{

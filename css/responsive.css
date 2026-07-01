@@ -580,6 +580,48 @@ img{
         overflow:hidden;
     }
 
+    /* ===========================
+        MOBILE PRODUCT CARDS
+       =========================== */
+
+       .desktop-text{
+    display:none;
+}
+
+    .mobile-text{
+    display:block;
+}
+
+.product-card{
+    min-height:420px !important;
+    padding:18px 14px;
+    border-radius:26px;
+}
+
+.product-card img{
+    width:90px;
+    margin-bottom:14px;
+}
+
+.product-card h3{
+    font-size:22px;
+    line-height:1.2;
+    margin-bottom:10px;
+}
+
+.product-card p{
+    display:-webkit-box;
+    -webkit-line-clamp:3;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+}
+
+.product-card .btn{
+    margin-top:auto;
+    padding:12px 24px;
+    font-size:15px;
+}
+
 }
 
 @media (max-width:768px){
